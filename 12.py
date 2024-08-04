@@ -14,7 +14,7 @@ else:
         gray_image, scaleFactor=1.1, minNeighbors=3, minSize=(30, 30))
 
     for (x, y, w, h) in faces:
-        cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 2)
+        cv2.rectangle(image, (x, y), (x+w, y+h), (0, 0, 255), 2)
 
     cv2.imshow('Detected Faces', image)
 
