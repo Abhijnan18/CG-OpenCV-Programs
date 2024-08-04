@@ -5,7 +5,7 @@ image = cv2.imread('img.webp')
 if image is None:
     print("Error: Unable to read the image.")
 else:
-    blurred_image = cv2.GaussianBlur(image, (11, 11), 0)
+    blurred_image = cv2.GaussianBlur(image, (5, 5), 0)
 
     smoothed_image = cv2.bilateralFilter(image, 9, 75, 75)
 
